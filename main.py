@@ -45,7 +45,7 @@ def multi_upload(message):
 
     # 2. Doodstream Upload
     try:
-        d_res = requests.get(f"https://doodapi.com/api/upload/url?key={DOOD_KEY}&url={url}").json()
+        d_res = requests.get(f"https://doodapi.co/api/upload/url?key={DOOD_KEY}&url={url}").json()
         if d_res['status'] == 200:
             results += "✅ **Doodstream:** Added successfully!\n"
         else:
